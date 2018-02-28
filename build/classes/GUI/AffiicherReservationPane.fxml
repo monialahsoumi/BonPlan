@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" opacity="0.7" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #00000;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleur.AffiicherReservationPaneController">
+   <children>
+      <Text fill="#21177c" layoutX="418.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des réservations">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TableView fx:id="reservationTab" layoutX="52.0" layoutY="257.0" onMouseClicked="#selectIdReservation" prefHeight="347.0" prefWidth="896.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="67.0" text="Numéro" />
+          <TableColumn fx:id="nbrPlace" prefWidth="114.0" text="Nombre de place" />
+            <TableColumn fx:id="dateReservation" prefWidth="126.0" text="Date de réservation" />
+            <TableColumn fx:id="telephone" prefWidth="96.0" text="Téléphone" />
+            <TableColumn fx:id="heure" prefWidth="53.0" text="Heure" />
+            <TableColumn fx:id="email" prefWidth="188.0" text="Email Visiteur" />
+            <TableColumn fx:id="etat" prefWidth="97.0" text="état" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="814.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../monia/BonPlanMonia/src/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="retour" layoutX="60.0" layoutY="52.0" mnemonicParsing="false" onAction="#retourProfil" opacity="0.4" style="-fx-background-color: #12355B;" text="Retour" textFill="WHITE" />
+   </children>
+</AnchorPane>

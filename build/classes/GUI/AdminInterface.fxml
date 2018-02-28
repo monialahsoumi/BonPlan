@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleur.AdminInterfaceController">
+   <children>
+      <TableView fx:id="tabV" layoutX="74.0" layoutY="117.0" prefHeight="511.0" prefWidth="612.0">
+        <columns>
+          <TableColumn fx:id="pseudoV" prefWidth="139.0" text="Visiteur Pseudo " />
+          <TableColumn fx:id="mailV" prefWidth="141.0" text="Visiteur Mail " />
+            <TableColumn fx:id="nomV" prefWidth="152.0" text="Visiteur Nom" />
+            <TableColumn fx:id="prenomV" prefWidth="179.0" text="Visiteur Prenom " />
+        </columns>
+      </TableView>
+      <TableView fx:id="tabP" layoutX="752.0" layoutY="117.0" prefHeight="511.0" prefWidth="612.0">
+         <columns>
+            <TableColumn fx:id="pseudoP" prefWidth="139.0" text="Plan Pseudo " />
+            <TableColumn fx:id="categorie" prefWidth="141.0" text="Plan Categorie" />
+            <TableColumn fx:id="adresse" prefWidth="152.0" text="Plan Adresse" />
+            <TableColumn fx:id="tel" prefWidth="179.0" text="Plan Telephone" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnV" layoutX="309.0" layoutY="644.0" mnemonicParsing="false" onAction="#AfficherV" text="Afficher tous Visiteurs " />
+      <Button fx:id="btnP" layoutX="1026.0" layoutY="644.0" mnemonicParsing="false" onAction="#AfficherP" text="Afficher tous Plans" />
+      <Label layoutX="295.0" layoutY="66.0" text="Espace Visiteur" textFill="#ab3939">
+         <font>
+            <Font name="Bodoni MT" size="17.0" />
+         </font></Label>
+      <Label layoutX="1026.0" layoutY="69.0" text="Espace Plan" textFill="#ab3939">
+         <font>
+            <Font name="Bodoni MT" size="17.0" />
+         </font></Label>
+      <HBox layoutX="14.0" prefHeight="46.0" prefWidth="541.0">
+         <children>
+            <Button fx:id="btnRetour" mnemonicParsing="false" onAction="#Retour" text="Acceuil" />
+            <Button fx:id="valider" mnemonicParsing="false" onAction="#ValiderCompte" text="Valider Compte" />
+            <Button fx:id="btnRec" mnemonicParsing="false" onAction="#traiterRecl" text="Traiter Recclamation" />
+            <Button fx:id="btnCon" mnemonicParsing="false" onAction="#ConsulterProfil" text="consulter Mon compte" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="109.0" fitWidth="123.0" layoutX="1268.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../logo.png" />
+         </image>
+      </ImageView>
+      <Line endX="400.0" layoutX="570.0" layoutY="350.0" rotate="90.0" startX="-100.0" />
+   </children>
+</AnchorPane>

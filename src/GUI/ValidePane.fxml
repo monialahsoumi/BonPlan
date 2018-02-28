@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleur.ValidePaneController">
+   <children>
+      <Button fx:id="afficher" layoutX="821.0" layoutY="597.0" mnemonicParsing="false" onAction="#AfficherListe" text="afficher" />
+      <TableView fx:id="tab" layoutX="81.0" layoutY="60.0" prefHeight="490.0" prefWidth="1191.0">
+         <columns>
+            <TableColumn fx:id="pseudo" prefWidth="207.0" text="Pseudo " />
+            <TableColumn fx:id="nomPlan" prefWidth="164.0" text="NomPlan " />
+            <TableColumn fx:id="adresse" prefWidth="239.0" text="Adresse" />
+            <TableColumn fx:id="telephone" minWidth="5.0" prefWidth="281.0" text="Telephone" />
+            <TableColumn fx:id="categorie" minWidth="2.0" prefWidth="143.0" text="Categorie" />
+            <TableColumn fx:id="mail" prefWidth="156.0" text="mail" />
+         </columns>
+      </TableView>
+      <Button fx:id="valider" layoutX="595.0" layoutY="597.0" mnemonicParsing="false" onAction="#Valider" text="Valider" />
+      <Label layoutX="595.0" layoutY="14.0" text="Validation des Comptes" textFill="#dd4949">
+         <font>
+            <Font name="Bodoni MT" size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRetour" layoutX="33.0" layoutY="12.0" mnemonicParsing="false" onAction="#retour" text="retour" />
+   </children>
+</AnchorPane>

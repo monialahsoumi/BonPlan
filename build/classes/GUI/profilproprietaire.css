@@ -1,0 +1,19 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+-fx-background-color: white ;
+    -fx-border-radius: 5px;
+}
+#AnchorPane{
+    -fx-background-color:  #2A2E37;
+    -fx-pref-width: 984px;
+    -fx-pref-height: 584px; 
+    -fx-margin : auto;
+}
+#rectangle{
+    -fx-background-color: white ;
+    -fx-border-radius: 5px;
+}
+

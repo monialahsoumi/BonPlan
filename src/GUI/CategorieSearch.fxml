@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.ClusteredGoogleMapView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="891.0" prefWidth="1545.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleur.CategorieSearchController">
+   <children>
+      <Pane layoutY="32.0" prefHeight="846.0" prefWidth="543.0">
+         <children>
+            <TableView fx:id="tableCateg" onMouseClicked="#selectLieu" onSort="#recherchePlan" prefHeight="859.0" prefWidth="543.0">
+              <columns>
+                <TableColumn fx:id="photo" prefWidth="180.0" text="Photo" />
+                <TableColumn fx:id="nom" prefWidth="361.9999542236328" text="Nom" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutX="546.0" layoutY="-2.0" prefHeight="878.0" prefWidth="1024.0">
+         <children>
+            <ClusteredGoogleMapView fx:id="map" layoutY="3.0" prefHeight="847.0" prefWidth="1045.0" />
+         </children>
+      </Pane>
+      <HBox layoutX="2.0" layoutY="-1.0" prefHeight="33.0" prefWidth="541.0">
+         <children>
+            <Button fx:id="retour" mnemonicParsing="false" onAction="#retourIndex" prefHeight="36.0" prefWidth="107.0" style="-fx-background-color: #1e90ff;" text="Retour" />
+            <HBox alignment="CENTER" prefHeight="33.0" prefWidth="434.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Listes Des  ">
+                     <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="label" prefHeight="33.0" prefWidth="100.0" text="Label">
+                     <font>
+                        <Font name="Arial Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

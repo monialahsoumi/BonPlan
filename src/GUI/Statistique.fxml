@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.embed.swing.SwingNode?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="677.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleur.StatistiqueController">
+   <children>
+      <SwingNode fx:id="staticSwigNode" />
+      <Button fx:id="screen" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#doScreen" prefHeight="25.0" prefWidth="74.0" text="Screen" />
+   </children>
+</AnchorPane>

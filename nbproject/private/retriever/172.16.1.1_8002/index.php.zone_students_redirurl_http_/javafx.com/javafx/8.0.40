@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>Esprit Portail Captif</title>
+		<meta name="viewport" content="width=1.0" />
+		<style type="text/css">
+			body {
+			background-color: #fff;
+			}
+			body,td,th {
+				color: #000;
+				font-family: Verdana, Arial;
+				font-size: 9pt;
+			}
+			h1 {
+				font-size: 14pt;
+				margin-top: 20;
+				text-align: center;
+			}
+			h2 {
+				font-size: 11pt;
+				background-color: blue;
+				color: #fff;
+				padding: 8px;
+				margin: 0;
+			}
+			h3 {
+				font-size: 15pt;
+				color: #000;
+				padding: 0px;
+				margin: 40;
+			}
+			#LoginForm {
+				padding: 1px;
+				margin: 5px;
+				max-width: 500px;
+				margin-left: auto;
+				margin-right: auto;				
+			}
+			#LoginFormOptions .LoginFormField {
+				width: 100%;
+			}
+			#LoginFormOptions .LoginFormButton {
+				margin-top: 5px;
+			}
+			#LoginFormCredentials {
+				border: solid 1px blue;
+				margin-right: 10px;
+				margin-bottom: 1px;
+				width: 500px;
+			}
+			#LoginFormVoucher {
+				border: solid 1px blue;
+				width: 100%;
+			}
+			.LoginFormContents {
+				padding: 5px;
+			}
+		</style>
+	</head>
+    <body>
+<font color="#666666" face="tahoma, sans-serif" style="font-size: 13px; background-color: rgb(255, 255, 255);"><b><span style="font-size: 24pt;">ESPRIT</span></b></font><span style="font-size:30px;"><span style="background-color: rgb(255, 255, 255); color: rgb(255, 64, 78); font-family: Helvetica, sans-serif;">&#9658;</span></span>
+		<h1>Portail Captif d'ESPRIT</h1>
+		<h3><div style="text-align: justify;">
+			<span style="font-family:times new roman,times,serif;">Afin de rationaliser l&rsquo;utilisation &nbsp;de la bande passante pour l&rsquo;acc&egrave;s &agrave; Internet et afin de garantir le d&eacute;bit optimum pour tous les &eacute;tudiants, nous mettons en place un m&eacute;canisme d&rsquo;authentification qui consiste &agrave; utiliser  pour tous les &eacute;tudiants  l'addresse e-mail comme login et comme password vos Numero d'inscription.</span>
+			
+			</div></h3>
+		<p>
+			<span style="color:#ff0000;"><font face="tahoma, sans-serif" size="2"><span style="background-color: rgb(255, 255, 255);"><b>Exemple :</b></span></font></span></p>
+		<p>
+			<b style="font-family: tahoma, sans-serif; font-size: small;">Nom&nbsp;</b><b style="font-family: tahoma, sans-serif; font-size: small;">: <span style="color:#006400;">be</span>n salah</b></p>
+		<p>
+			<span style="font-size:12px;"><b style="font-family: tahoma, sans-serif; font-size: small;"><span style="background-color: rgb(255, 255, 255);">Pr&eacute;nom</span>&nbsp;</b><font face="tahoma, sans-serif"><span style="background-color: rgb(255, 255, 255);"><b>:&nbsp;<span style="color: rgb(0, 0, 205);">mo</span>hamed ali &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b></span></font></span><b style="font-family: tahoma, sans-serif; font-size: small;">Login :&nbsp;</b><b style="font-family: tahoma, sans-serif; font-size: small;">mohamedali.</b><b style="font-family: tahoma, sans-serif; font-size: small;">bensalah@esprit.tn</b></p>
+		<p>
+			<span style="font-size: 12px;"><b style="font-family: tahoma, sans-serif; font-size: small;">Num&eacute;ro d&rsquo;inscription : <span style="color:#ff0000;">153JFT6639</span></b></span><b style="font-family: tahoma, sans-serif; font-size: 12px;">&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </b><span style="font-size: 12px;"><b style="font-family: tahoma, sans-serif; font-size: small;"><span style="color:#ff0000;">&nbsp;</span></b></span><b style="font-family: tahoma, sans-serif; font-size: small;">password :&nbsp;<span style="color: rgb(255, 0, 0);">153JFT6639   </span></b></p>
+		<p>&nbsp;</p>
+
+		<p>
+			<span style="text-align: right; font-size: 12px;"><b style="font-family: tahoma, sans-serif; font-size: small;"><span style="color:#FF0000;">Remarque&nbsp;</span>: </b></span><strong>Les mots&nbsp;de passe des &eacute;tudiant ESPRIT <font color="#008000" face="tahoma, sans-serif" size="2">Pr&eacute;pa&nbsp;</font>sont initialis&eacute;s&nbsp;&agrave;&nbsp;leur CIN&nbsp;</strong></p>
+			
+			
+		<div id="LoginForm">
+			<p></p>
+			<div id="LoginFormOptions">
+				<div id="LoginFormCredentials" aligne=center >
+					<form method="post" action="http://172.16.1.1:8002/index.php?zone=students">
+						<input name="redirurl" type="hidden" value="http://javafx.com/javafx/8.0.40">
+						<h2>login / password</h2>
+						<div class="LoginFormContents">						
+							Login :<br/>
+							<input name="auth_user" type="text" class="LoginFormField"><br />
+							Password :<br/>
+							<input id="auth_pass" name="auth_pass" type="password" class="LoginFormField"><br/>
+							<input name="accept" type="submit" value="Login" class="LoginFormButton">
+						</div>
+					</form>
+				</div>				
+			</div>
+		</div>
+		</br></br>
+		<p style="text-align: right;">
+	
+	<strong><span style="font-size:16px;">En cas de probl&egrave;mes avec vos param&egrave;tres, contacter Service Scolarit&eacute; ou  salle systeme  Bloc A 2&egrave;me &eacutetage &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></strong></p>
+</body>
+</html>

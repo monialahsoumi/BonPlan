@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" opacity="0.8" prefHeight="720.0" prefWidth="1434.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlleur.inscritProprietaireController">
+   <children>
+      <Label layoutX="17.0" layoutY="142.0" text="Pseudo" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfPseudo" layoutX="106.0" layoutY="139.0" opacity="0.5" prefHeight="27.0" prefWidth="152.0" />
+      <Label layoutX="19.0" layoutY="191.0" text="Mail" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfMail" layoutX="106.0" layoutY="187.0" opacity="0.5" prefHeight="27.0" prefWidth="152.0" />
+      <Label layoutX="14.0" layoutY="235.0" prefHeight="37.0" prefWidth="82.0" text="Mot de passe" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tfPwd" layoutX="106.0" layoutY="240.0" opacity="0.5" prefHeight="27.0" prefWidth="152.0" />
+      <Label layoutX="290.0" layoutY="142.0" text="Nom du Plan" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNomPlan" layoutX="387.0" layoutY="139.0" opacity="0.5" prefHeight="27.0" prefWidth="152.0" />
+      <Label layoutX="20.0" layoutY="393.0" text="Adresse" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfAdresse" layoutX="106.0" layoutY="389.0" opacity="0.5" prefHeight="27.0" prefWidth="152.0" />
+      <Label layoutX="18.0" layoutY="543.0" text="Téléphone" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTel" layoutX="106.0" layoutY="539.0" opacity="0.5" prefHeight="27.0" prefWidth="152.0" />
+      <Label layoutX="295.0" layoutY="328.0" text="Déscription" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfDesc" alignment="TOP_LEFT" layoutX="379.0" layoutY="320.0" opacity="0.5" prefHeight="105.0" prefWidth="200.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="297.0" layoutY="263.0" text="Catégorie" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="tfCategorie" layoutX="399.0" layoutY="259.0" opacity="0.5" prefHeight="27.0" prefWidth="142.0" />
+      <Button fx:id="btnSinscrire" layoutX="272.0" layoutY="604.0" mnemonicParsing="false" onAction="#addMethod" prefHeight="50.0" prefWidth="127.0" style="-fx-background-color: #1e90ff;" text="S'inscrire" textFill="WHITE" />
+      <Line endX="400.0" layoutX="429.0" layoutY="384.0" rotate="-90.0" stroke="#806a6a" />
+      <ImageView fx:id="pdp" fitHeight="105.0" fitWidth="139.0" layoutX="1261.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="595.0" AnchorPane.leftAnchor="1261.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="20.0">
+         <image>
+            <Image url="@../Boss-3-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="228.0" layoutX="399.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="485.0" AnchorPane.leftAnchor="399.0" AnchorPane.rightAnchor="408.43182373046875" AnchorPane.topAnchor="12.0">
+         <image>
+            <Image url="@../Bouton-inscrivez-vous.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="retourbtn" layoutX="32.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnRetour" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: #1E90FF;" text="Retour" textFill="WHITE" />
+      <Label layoutX="292.0" layoutY="191.0" text="Photo du Plan" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnU" layoutX="434.0" layoutY="214.0" mnemonicParsing="false" onAction="#btnUpload" opacity="0.86" prefHeight="25.0" prefWidth="105.0" style="-fx-background-color: #1E90FF;" text="Upload Image..." textFill="WHITE" />
+      <TextField fx:id="txtpath" disable="true" layoutX="387.0" layoutY="188.0" prefHeight="25.0" prefWidth="152.0" />
+      <GoogleMapView fx:id="map" layoutX="690.0" layoutY="134.0" prefHeight="575.0" prefWidth="683.0" />
+      <Label fx:id="lat" layoutX="690.0" layoutY="77.0" prefHeight="27.0" prefWidth="152.0" text="Label" textFill="#bc4d4d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lon" layoutX="889.0" layoutY="77.0" prefHeight="27.0" prefWidth="152.0" text="Label" textFill="#bc4d4d">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfVille" layoutX="106.0" layoutY="442.0" opacity="0.5" prefHeight="27.0" prefWidth="152.0" />
+      <Label layoutX="20.0" layoutY="446.0" text="Ville" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfCodeP" layoutX="106.0" layoutY="482.0" opacity="0.5" prefHeight="27.0" prefWidth="55.0" />
+      <Label layoutX="20.0" layoutY="486.0" text="Code Postale" textFill="#bc4d4d">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="284.0" prefHeight="44.0" prefWidth="87.0" text="Confirmer Mot de passe" textFill="#bc4d4d" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tfPwdConfirme" layoutX="106.0" layoutY="293.0" opacity="0.5" prefHeight="27.0" prefWidth="152.0" />
+   </children>
+</AnchorPane>

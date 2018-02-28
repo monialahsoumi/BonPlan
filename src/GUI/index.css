@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+   -fx-background-size  :contain;
+   -fx-background-repeat: no-repeat;
+}
+
+#id{
+   background-image: url(elegant-grey-illumination-background-presentations-powerpoint-backgrounds.jpg); 
+   background-size  : contain;
+   background-repeat: no-repeat;
+   height: auto;
+ width:auto; 
+}
